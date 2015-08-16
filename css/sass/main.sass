@@ -1,0 +1,626 @@
+$btn-border: 28px
+$border: #bac0c6
+$titles: #333333
+
+body
+	font-family: "ProximaNovaRegular", sans-serif
+
+.overflow
+	overflow: hidden
+
+header
+	width: 100%
+	height: 100vh
+	background: url(../img/header-background.jpg) no-repeat center
+	background-size: cover
+
+.header-mask
+	position: absolute
+	top: 0
+	left: 0
+	width: inherit
+	height: inherit
+	background-color: #000
+	opacity: .7
+	z-index: 0
+
+nav
+	position: relative
+	margin-top: 50px
+	z-index: 1	
+
+nav .logo
+	display: flex
+	align-items: center
+	height: 40px
+	float: left
+	span
+		font-size: 25px
+		color: #1dd285
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		cursor: pointer
+
+nav .menu
+	float: right
+	display: flex
+	align-items: center
+	li
+		letter-spacing: 1px
+		cursor: pointer
+		transition: all .5s ease
+	li:first-child, li:nth-child(2)
+		font-size: 18px
+		padding: 0 20px	
+		color: #5F5E5E
+		&:hover
+			color: #fff		
+
+.sign-up
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-left: 10px
+	width: 100px
+	height: 40px
+	border-radius: $btn-border
+	font-size: 16px
+	color: #fff
+	text-transform: uppercase
+	background-color: #1194f6
+	&:hover
+		background-color: #3cb0fd
+
+
+
+/*-- mobile --*/
+.mobile-menu-button
+	position: absolute
+	top: -30px
+	right: 0
+	width: 45px
+	height: 40px
+	padding: 5px
+	z-index: 10
+	visibility: hidden
+
+.burger-element
+	position: absolute
+	right: 5px
+	width: 35px
+	height: 3px
+	background-color: #fff
+	transition: all .5s ease		
+
+.burger-line-1
+	top: 5px
+
+.burger-line-1-active
+	transform:  rotateZ(-45deg) translate(-12px, 8px)
+
+.burger-line-2
+	top: 15px
+	opacity: 1
+
+.burger-line-2-active
+	opacity: 0
+	transform: translate(20px, 0)	
+
+.burger-line-3
+	top: 25px
+
+.burger-line-3-active
+	transform: rotateZ(45deg) translate(-5px, -4px)
+	
+
+/*-- --*/
+.mobile-menu
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 5
+	opacity: 0
+	background-color: #000
+	visibility: hidden
+	transition: opacity .5s ease
+
+.mobile-menu-vissible
+	opacity: .95
+	visibility: visible	
+
+.mobile-logo
+	margin: 250px 0 25px
+	display: flex
+	align-items: center
+	float: left
+	opacity: 0
+	transform: translate(0, -20px)
+	transition: all .5s ease
+	transition-delay: .15s
+	span
+		font-size: 50px
+		color: #1dd285
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		cursor: pointer
+
+.mobile-1, .mobile-2
+	letter-spacing: 1px
+	cursor: pointer
+	transition: all .5s ease
+	font-size: 30px
+	padding: 35px 20px	
+	color: #fff
+	opacity: 0
+	transform: translate(0, -20px)
+	transition: all .5s ease
+
+.mobile-1
+	transition-delay: .3s
+
+.mobile-2
+	transition-delay: .45s			
+			
+.mobile-sign-up
+	margin-top: 25px
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 150px
+	height: 50px
+	border-radius: 28px
+	font-size: 22px
+	color: #fff
+	text-transform: uppercase
+	background-color: #1194f6
+	opacity: 0
+	transform: translate(0, -20px)	
+	transition: all .5s ease
+	transition-delay: .6s		
+
+.mobile-animation
+	transform: translate(0, 0)
+	opacity: 1	
+
+
+
+/*-- titles --*/
+.header-titles
+	margin: 275px auto 0
+	text-align: center
+	h1
+		font-size: 48px
+		color: #fff
+	p
+		padding-top: 30px
+		font-size: 17px
+		color: #fff	
+		line-height: 25px
+
+
+
+/*-- button --*/
+.button
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 80px auto 0
+	width: 150px
+	height: 60px
+	border: 2px solid #fff
+	font-size: 16px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1.5px
+	cursor: pointer
+	transition: all .5s ease
+	&::before
+		content: ''
+		position: absolute
+		top: -50px
+		left: 64px
+		width: 20px
+		height: 1px
+		background-color: #fff		
+	&:hover
+		background-color: #000
+	
+.figure
+	position: relative
+	margin: 230px auto 0
+	width: 25px
+	height: 25px
+	border-radius: 50%
+	background-color: #fff
+	&::after
+		content: ''
+		position: absolute
+		top: -140px
+		left: 12px
+		width: 1px
+		height: 140px
+		background-color: #fff
+	
+
+
+
+
+
+
+/* --------------- Learn ----------------*/
+/*---------------------------------------*/
+.learn
+	margin-top: 150px
+
+.learn-titles
+	margin: 0 auto
+	text-align: center
+	max-width: 840px
+	border: 1px solid #fff
+	h2
+		font-size: 53px
+		letter-spacing: 1.5px
+		color: #333
+		padding-bottom: 25px
+	hr
+		width: 330px
+		height: 1px
+		background-color: #888
+	p
+		padding-top: 25px
+		color: #888
+		font-size: 18px	
+		line-height: 25px					
+
+
+/*-- --*/
+.learn-content
+	margin-top: 170px
+
+.visual, .markup, .code
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	h4
+		padding: 45px 0 25px
+		font-size: 21px
+	p
+		font-size: 18px
+		line-height: 25px
+
+.visual
+	h4,p
+		color: #1194f6
+
+.markup
+	h4,p
+		color: #ea5767
+
+.code
+	h4,p
+		color: #04c3b1									
+
+
+
+
+
+/* --------------- Technology ----------------*/
+/*--------------------------------------------*/		
+.technology
+	margin-top: 150px
+	padding-bottom: 160px
+	background-color: #f8f8f7
+	border-top: $border
+
+.technology-description
+	h3
+		padding: 210px 0 25px
+		font-size: 31px
+		color: #333
+		text-transform: uppercase
+	hr
+		width: 360px
+		height: 1px
+		background-color: $border		
+		margin: 0
+	p
+		padding: 25px 60px 40px 0
+		font-size: 18px
+		color: #333
+		line-height: 25px
+	button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 135px
+		height: 50px
+		background-color: #fff
+		border: 2px solid $border
+		border-radius: $btn-border
+		font-size: 21px
+		color: $titles
+		transition: .5s ease
+		&:hover
+			background-color: $border
+			color: #fff
+
+.technology-img
+	img
+		display: block
+		margin: 140px 0 0 45px					
+
+
+
+
+
+/* --------------- Creative ----------------*/
+/*--------------------------------------------*/
+.creative-img
+	img
+		margin: 110px 0 0 0
+		display: block
+		max-height: 400px
+		max-width: 600px
+
+.creative-description
+	h3
+		padding: 200px 0 20px
+		font-size: 31px
+		color: #333
+		text-transform: uppercase
+	hr
+		width: 360px
+		height: 1px
+		background-color: $border		
+		margin: 0
+	p
+		padding: 30px 0 40px
+		font-size: 18px
+		color: #333
+		line-height: 25px				
+	button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 135px
+		height: 50px
+		background-color: #fff
+		border: 2px solid $border
+		border-radius: $btn-border
+		font-size: 21px
+		color: $titles
+		transition: .5s ease
+		&:hover
+			background-color: $border
+			color: #fff
+
+
+
+
+
+/* --------------- Article ----------------*/
+/*--------------------------------------------*/			
+.article
+	padding-bottom: 200px
+	text-align: center
+	p
+		padding: 230px 0 40px
+		font-size: 43px
+		color: #333
+		line-height: 50px
+	button
+		margin: 0 auto
+		width: 180px
+		height: 50px
+		background-color: #fff
+		border: 2px solid $border
+		border-radius: $btn-border
+		font-size: 25px
+		color: $titles
+		transition: .5s ease
+		&:hover
+			background-color: $border
+			color: #fff	
+
+
+
+
+
+/* --------------- Sign Up ----------------*/
+/*--------------------------------------------*/	
+.sign_up
+	position: relative
+	width: 100%
+	height: 675px
+	background: url(../img/second-bacckground.jpg) no-repeat center
+	background-size: cover
+
+.sign_up .mask
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	opacity: .3
+	z-index: 0	
+
+.sign_up-description
+	position: relative
+	z-index: 1 
+	h4
+		padding: 230px 0 20px
+		max-width: 370px
+		font-size: 30px
+		color: #333
+	hr
+		margin: 0
+		background-color: #333
+		width: 370px
+		height: 1px
+	p
+		padding-top: 20px
+		font-size: 18px
+		line-height: 25px
+		color: #333
+
+form
+	margin: 110px 0 0 185px
+	padding: 30px 20px
+	position: relative
+	width: 400px
+	height: 450px
+	background-color: #fff
+	border: 1px solid $border
+	border-radius: 4px
+	text-align: center
+	h5
+		position: absolute
+		top: 25px
+		left: 20px
+		font-size: 25px
+		color: #333
+
+form .user
+	position: relative
+	margin-top: 50px
+	input
+		width: 355px
+		height: 75px
+		border: 1px solid #85868D
+		text-indent: 60px
+		font-size: 21px
+		&::-webkit-input-placeholder
+			color: #333
+		&::-moz-placeholder
+			color: #333	
+	span
+		position: absolute
+		top: 24px
+		left: 17px
+
+form .mail
+	position: relative
+	margin-top: 20px
+	input
+		width: 355px
+		height: 75px
+		border: 1px solid #85868D
+		text-indent: 60px
+		font-size: 21px
+		&::-webkit-input-placeholder
+			color: #333
+		&::-moz-placeholder
+			color: #333	
+	span
+		position: absolute
+		top: 24px
+		left: 17px
+
+form 
+	button
+		margin-top: 20px
+		width: 355px
+		height: 75px
+		background-color: #2196f3
+		border: none
+		font-size: 29px
+		text-transform: uppercase
+		color: #fff
+		transition: .5s ease
+		&:hover
+			background-color: #407eaf
+	p
+		padding-top: 25px
+		font-size: 16.5px
+		color: #333
+		line-height: 20px
+
+
+
+
+
+/* --------------- Clients ----------------*/
+/*--------------------------------------------*/
+.clients
+	padding-bottom: 100px
+	text-align: center
+	h3
+		padding: 120px 0 65px
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 45px
+		text-transform: uppercase
+
+.partners
+	display: flex
+	justify-content: space-around		
+
+
+
+
+
+/* --------------- Footer bacgkround ----------------*/
+/*--------------------------------------------*/		
+.footer-background
+	position: relative
+	width: 100%
+	height: 710px
+	background: url(../img/footer-background.jpg) no-repeat center
+	background-size: cover
+	text-align: center
+	p
+		position: relative
+		padding: 310px 0 40px
+		font-size: 46px
+		line-height: 50px
+		color: #fff
+		z-index: 1
+	button
+		position: relative
+		z-index: 1
+		margin: 0 auto
+		width: 180px
+		height: 50px
+		background-color: #fff
+		border: none
+		border-radius: $btn-border
+		font-size: 25px
+		color: #333
+		transition: .5s ease
+		&:hover
+			background-color: $border
+			color: #fff		
+
+.footer-background .mask
+	position: absolute
+	top: 0
+	left: 0
+	height: inherit
+	width: inherit
+	background-color: #000
+	opacity: .3
+	z-index: 0		
+
+
+
+
+
+/* --------------- Footer ----------------*/
+/*--------------------------------------------*/
+footer
+	height: 150px
+	display: flex
+	justify-content: center
+	align-items: center
+	h6
+		font-size: 25px
+		color: #333	
+
+	

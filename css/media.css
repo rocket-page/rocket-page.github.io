@@ -1,0 +1,296 @@
+@media screen and (max-width: 1400px){
+	.header-titles{margin: 75px auto 0;}
+	.button{margin: 50px auto 0;}
+	.button::before{top: -30px;}
+	.figure{margin: 120px auto 0;}
+	.figure::after{
+		top: -80px;
+		height: 80px;
+	}
+
+	/*-- --*/
+	.learn{margin-top: 75px}
+	.learn-content{margin-top: 85px;}
+
+	/*-- --*/
+	.technology{margin-top: 75px;}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.technology-img img{margin: 140px 5px 0 0;}
+
+	/*-- form --*/
+	form{margin: 110px 0 0 80px}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+	.creative-img img{
+		max-height: 300px;
+		max-width: 500px;
+	}
+
+	/*-- article --*/
+	.article p{padding: 100px 0 40px}	
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+	.learn{margin-top: 75px}
+
+	/*-- form --*/
+	form{margin: 110px 0 0 30px}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+	.technology{padding-bottom: 0;}
+	.technology-description{text-align: center;}
+	.technology-description h3{padding: 50px 0 25px;}
+	.technology-description hr{margin: 0 auto;}
+	.technology-description p{padding: 25px 0 25px;}
+	.technology-description button{margin: 0 auto;}
+	.technology-img img{margin: 50px auto;}
+
+	/*-- --*/
+	.creative-img img{
+		margin: 70px auto 0;
+		max-height: 400px;
+		max-width: 600px;
+	}
+	.creative-description{text-align: center;}
+	.creative-description h3{padding: 50px 0 25px;}
+	.creative-description hr{margin: 0 auto;}
+	.creative-description p{padding: 25px 0 25px;}
+	.creative-description button{margin: 0 auto;}
+
+	/*-- sign up--*/
+	.sign_up{height: auto;}
+	.sign_up-description{text-align: center;}
+	.sign_up-description h4{
+		max-width: 100%;
+		padding: 50px 0 20px 0;
+		margin: 0;
+	}
+	.sign_up-description hr{
+		display: block;
+		margin: 0 auto;
+	}
+
+	form{margin: 50px auto;}	
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.logo, .menu{visibility: hidden;}
+	.mobile-menu-button{visibility: visible;}
+
+	/*-- --*/
+	.markup{margin: 50px 0 50px;}
+	.code p{max-width: 60%;}
+	.markup p{max-width: 60%;}
+	.visual p{max-width: 60%;}
+
+	/*-- creative --*/
+	.creative-img img{
+		max-height: 300px;
+		max-width: 500px;
+	}
+
+	/*-- clients --*/
+	.partners{
+		align-items: center;
+		flex-direction: column;
+	}
+	.partners img{
+		display: block;
+		margin: 10px 0;
+	}	
+
+	/*-- article --*/
+	.article p{
+		font-size: 31px;
+		line-height: 35px;
+	}		
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+	.mobile-logo{
+		margin: 150px 0 25px;
+		height: 40px;
+	}
+	.mobile-logo span{font-size: 25px;}
+	.mobile-1, .mobile-2{
+		font-size: 20px;
+		padding: 20px 20px;	
+	}
+	.mobile-sign-up{
+		width: 100px;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	/*--  --*/
+	.header-titles{margin: 25px auto 0;}
+	.header-titles h1{font-size: 35px;}
+	.header-titles p{
+		padding-top: 20px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.learn-titles h2{font-size: 35px;}
+	.learn-titles p{
+		padding-top: 20px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	/*-- learn --*/
+	.learn-content{margin-top: 85px;}
+	.code p{
+		max-width: 90%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.markup p{
+		max-width: 90%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.visual p{
+		max-width: 90%;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	/*-- technology --*/
+	.technology-description hr{width: 200px;}
+	.technology-description h3{padding: 50px 0 25px;}
+	.technology-description p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	/*-- creative --*/
+	.creative-img img{
+		max-height: 200px;
+		max-width: 400px;
+	}
+	.creative-description hr{width: 200px;}
+	.creative-description h3{padding: 50px 0 25px;}
+	.creative-description p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	/*-- article --*/
+	.article{padding-bottom: 50px;}
+	.article p{padding: 50px 0 40px;}
+
+	/*-- sign up --*/
+	.sign_up-description hr{width: 150px;}
+	form{width: 300px;}
+	form .mail input{
+		width: 260px;
+		height: 60px;
+	}
+	form .user input{
+		width: 260px;
+		height: 60px;
+	}
+	form button{
+		width: 260px;
+		height: 60px;
+		font-size: 24px;
+	}
+
+	/*-- footer background*/
+	.footer-background{
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.footer-background p{
+		padding: 50px 0 40px;
+		font-size: 31px;
+		line-height: 35px;
+	}
+
+	/*-- footer --*/
+	footer{height: 80px;}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+	.button{
+		margin: 40px auto 0;
+		width: 120px;
+		height: 50px;
+		font-size: 14px;
+	}
+	.button::before{
+		top: -25px;
+		left: 50px;
+	}
+	.figure{margin: 120px auto 0;}
+	.figure::after{
+		top: -80px;
+		height: 80px;
+	}
+	
+	/*-- --*/
+	.learn-titles hr{width: 200px;}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 350px){
+	/*-- creative --*/
+	.creative-img img{
+		max-height: 170px;
+		max-width: 360px;
+	}	
+}
+
+
+
